@@ -98,6 +98,49 @@ li a:hover{
 
 
 /* ___Hero-section___ */
+/* .carooooooo .button{
+  width: 100px;
+  height: 100px;
+} */
+/* ___slider 7 */
+.slider0-sect{
+  background-image: url(./img/bg-BBenVWGz.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.slider0-wrapper{
+  width: 90%;
+  max-height: 100vh;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: wrap;
+  padding: 60px;
+
+} 
+.slider0-image img{
+  width: 600px;
+}
+
+
+/* ____Media query for slider 7____ */
+@media(max-width:991px){
+  .slider0-wrapper{
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .slider0-image img{
+    width: 300px
+  }
+}
+
+
+
 .slider1-sect{
   background-image: url(./img/slider1-bg.png);
   background-size: cover;
@@ -960,6 +1003,12 @@ li a:hover{
   font-size: 0.88em;
   color: black;
 }
+.third-card-btnss{
+  transition: 2s;
+}
+.third-card:hover .third-card-btnss{
+  color: #981D87;
+}
 
 /* ___Third section media query__ */
 @media(max-width:823px){
@@ -1682,6 +1731,7 @@ li a:hover{
 }
 
 
+
 /* ___Fourteenth Section____ */
 .fourteenth-section{
   width: 100%;
@@ -1750,16 +1800,58 @@ li a:hover{
     width: 90%;
   }
 }
+@media(max-width:765px){
+  .fourteenth-first-img{
+    width: 294px;
+  }
+  /* .fourteenth-wrapper .cards{
+    height: 530px;
+  } */
+  .fourteenth-last-image{
+    width: 300px;
+  }
+}
 
-/* ____Footer Section____ */
-
-.footer-wrapper{
+/* ____Fifteen Section____ */
+.fifteen-section{
   width: 90%;
   margin: auto;
+}
+.fifteen-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.fifteen-wrapper{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content:center ;
+  gap: 2em;
+  padding: 20px;
+  box-shadow: 0px 0px 5px 2px #f1f1f1;
+}
+
+.youtube-link{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ____Footer Section____ */
+.footer-section{
   background-image: url(./img/slider1-bg.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+.footer-wrapper{
+  width: 90%;
+  margin: auto;
 }
 .footer-wrapper p a:hover{
   color:#EC45C3;
@@ -1887,4 +1979,6 @@ li a:hover{
 }
 
 
-
+body{
+  overflow-x: hidden;
+}
