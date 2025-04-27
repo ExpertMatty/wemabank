@@ -140,6 +140,7 @@ li a:hover{
   .hero-wrapper{
     width: 90%;
     margin: auto;
+    padding: 30px;
   }
   .hero-text-image{
     flex-direction: column;
@@ -219,7 +220,7 @@ li a:hover{
 }
 @media(max-width:640px){
   .second-sect-container{
-    width: 60%;
+    width: 90%;
     margin: auto;  
   }
   .second-lefti-side{
@@ -269,6 +270,7 @@ li a:hover{
   align-items: center;
   justify-content: center;
   gap: 2em;
+  padding: 20px;
   border: thin solid gray;
 }
 .third-image img{
