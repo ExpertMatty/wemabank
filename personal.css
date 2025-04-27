@@ -47,7 +47,7 @@ li a:hover{
   margin: auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 10px;
 }
 .fa-magnifying-glass{
@@ -120,9 +120,13 @@ li a:hover{
   border-radius: 40px;
   border: none;
 }
-.hero-text{
-  width: 50%;
+.hero-text-image{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3em;
 }
+
 .hero-text h1{
   font-size: 3em;
   font-weight: 700;
@@ -130,11 +134,7 @@ li a:hover{
 .hero-text p{
   font-size: 0.8em;
 }
-.hero-text-image{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 
 @media(max-width:990px){
   .hero-wrapper{
@@ -147,13 +147,17 @@ li a:hover{
     margin: auto; */
     margin-bottom: 100px;
   }
+  .hero-text{
+    width: 90%;
+    margin: auto;
+  }
   .hero-image img{
     width: 100%;
   }
 }
 @media(max-width:640px){
   .hero-wrapper{
-    width: 100%;
+    width: 90%;
     margin: auto;
   }
   .hero-text h1{
@@ -192,6 +196,9 @@ li a:hover{
   width: 90%;
   margin: auto;
   padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .second-sect-container p{
   font-size: 0.8em;
@@ -215,7 +222,7 @@ li a:hover{
 }
 @media(max-width:640px){
   .second-sect-container{
-    width: 60%;
+    width: 90%;
     margin: auto;  
   }
   .second-lefti-side{
@@ -272,14 +279,20 @@ li a:hover{
 }
 @media(max-width:990px){
   .third-wrapper{
-    width: 60%;
+    width: 90%;
     margin: auto;
+    /* border: 3px solid red; */
   }
   .third-image-text{
+    /* border: 3px solid red; */
+    width: 100%;
+    margin: auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 20px;
   }
+  
 }
 
 @media(max-width:640px){
@@ -287,12 +300,12 @@ li a:hover{
     font-size: 1em;
   }
   .third-wrapper{
-    width: 50%;
+    width: 90%;
     margin: auto;
   }
-  .third-image img{
+  /* .third-image img{
     width: 100%;
-  }
+  } */
 }
 
 @media(max-width:425px){
@@ -460,13 +473,6 @@ li a:hover{
 }
 
 
-
-
-
-
-
-
-
 .third-sect{
   width: 100%;
   margin: auto;
@@ -526,5 +532,142 @@ li a:hover{
   }
   .acco-wrapper{
     display: block;
+  }
+}
+
+
+/* ____Footer Section____ */
+.footer-section{
+  background-image: url(./img/slider1-bg.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.footer-wrapper{
+  width: 90%;
+  margin: auto;
+}
+.footer-wrapper p a:hover{
+  color:#EC45C3;
+}
+.upper-footer-wrapper{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 3em;
+  padding: 60px;
+  line-height: 1;
+}
+.wema-white-img{
+  width: 180px;
+}
+.licensed-text{
+  display: flex;
+  gap: 1em;
+
+}
+.licensed-txt{
+  color: white;
+  font-weight: 600;
+  padding-top: 10px;
+}
+.cbn-logo{
+  width: 24px;
+}
+.upper-footer-wrapper h4{
+  color: white;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+.upper-footer-wrapper p a{
+  color:#D1D5DB;
+  text-decoration: none;
+  font-size: 0.8em;
+  line-height: -1em;
+}
+.upper-footer-wrapper .first-upper{
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+}
+.upper-footer-wrapper .second-upper{
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+}
+.upper-social-logo{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+.upper-social-logo .fa-brands{
+  color: white;
+  
+}
+
+.lower-footer-wrapper{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 3em;
+  padding: 10px 60px;
+}
+.lower-download-logo{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.lower-download-logo p{
+  color: white;
+  font-size: 0.8em;
+}
+.lower-download-logo img{
+  width: 120px;
+}
+.lower-copywrite{
+  padding-top: 20px;
+}
+
+.lower-footer-wrapper h4{
+  color: white;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+.lower-footer-wrapper p a{
+  color:#D1D5DB;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+.lower-footer-wrapper .first-lower{
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+}
+.lower-footer-wrapper .second-lower{
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+}
+
+/* ___Footer Media Query____ */
+@media(max-width:800px){
+  .upper-footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .wema-white-img{
+    width: 150px;
+  }
+  .licensed-txt{
+    font-size: 0.8em;
+  }
+  .lower-footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+  .first-lower{
+    width: 100%;
   }
 }
