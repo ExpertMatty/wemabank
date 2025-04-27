@@ -174,7 +174,7 @@ li a:hover{
   background-color: #FAFAFA;
 }
 .second-sect-container{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 90%;
   margin: auto;
   background-color: #E5E5E5;
